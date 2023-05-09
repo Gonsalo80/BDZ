@@ -230,3 +230,51 @@ form button:active {
     color: #fff;
     box-shadow: 0 0 2px 0 #0004;
 }
+
+.auth-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #0006;
+    z-index: 10;
+    display: none;
+}
+
+.auth-wrapper.active {
+    display: flex;
+}
+
+.auth {
+    width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 #0004;
+    position: relative;
+    display: none;
+}
+
+.auth.active {
+    display: block;
+}
+
+.auth-close {
+    width: max-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.auth h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
